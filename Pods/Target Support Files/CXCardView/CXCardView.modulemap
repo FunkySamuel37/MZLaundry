@@ -1,0 +1,6 @@
+framework module CXCardView {
+  umbrella header "CXCardView-umbrella.h"
+
+  export *
+  module * { export * }
+}
