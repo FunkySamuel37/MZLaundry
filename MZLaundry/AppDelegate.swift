@@ -24,8 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("loginViewController")
             
         } else {
-//            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isOpened")
-//            let vc = MZSplashViewController()
+            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isOpened")
             let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("mzSplashViewController")
             let naviController = UINavigationController(rootViewController: vc)
             naviController.automaticallyAdjustsScrollViewInsets = false
@@ -35,14 +34,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         
-        for familyName in UIFont.familyNames() {
-            print("=========FamilyName:" + (familyName ) + "=========")
-            
-            for fontName in UIFont.fontNamesForFamilyName(familyName) {
-                print(fontName)
-            }
-            print("--------------\n\n")
-        }
+//        for familyName in UIFont.familyNames() {
+//            print("=========FamilyName:" + (familyName ) + "=========")
+//            
+//            for fontName in UIFont.fontNamesForFamilyName(familyName) {
+//                print(fontName)
+//            }
+//            print("--------------\n\n")
+//        }
         
         
         return true

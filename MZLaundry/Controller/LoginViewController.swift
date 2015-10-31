@@ -90,6 +90,7 @@ class LoginViewController: UIViewController {
     @IBAction func loginWithPhoneNumber(sender: AnyObject) {
         if self.phoneNumField.text != nil && self.phoneNumField.text != "" {
             NSUserDefaults.standardUserDefaults().setInteger(Int(phoneNumField.text!)!, forKey: "userPhoneNumber")
+            NSUserDefaults.standardUserDefaults().synchronize()//同步数据
             //            print(Int(phoneNumField.text!))
             let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("tabBarViewController")
             self.navigationController?.pushViewController(vc, animated: true)

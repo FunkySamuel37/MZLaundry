@@ -26,6 +26,9 @@
 		D965C7661BE360B800FEA98F /* msyh.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D965C7621BE360B800FEA98F /* msyh.ttf */; settings = {ASSET_TAGS = (); }; };
 		D965C7671BE360B800FEA98F /* msyhbd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D965C7631BE360B800FEA98F /* msyhbd.ttf */; settings = {ASSET_TAGS = (); }; };
 		D965C7681BE360B800FEA98F /* STHeiti-Light.ttc in Resources */ = {isa = PBXBuildFile; fileRef = D965C7641BE360B800FEA98F /* STHeiti-Light.ttc */; settings = {ASSET_TAGS = (); }; };
+		D965C76A1BE3D17000FEA98F /* MZIncomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D965C7691BE3D17000FEA98F /* MZIncomeController.swift */; settings = {ASSET_TAGS = (); }; };
+		D965C76C1BE524ED00FEA98F /* DaliyIncomeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D965C76B1BE524ED00FEA98F /* DaliyIncomeInfo.swift */; settings = {ASSET_TAGS = (); }; };
+		D965C76E1BE5250200FEA98F /* OrderInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D965C76D1BE5250200FEA98F /* OrderInfo.swift */; settings = {ASSET_TAGS = (); }; };
 		D983EC551BD27C870068F89A /* MZTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D983EC541BD27C870068F89A /* MZTabBar.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
@@ -53,6 +56,9 @@
 		D965C7621BE360B800FEA98F /* msyh.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = msyh.ttf; sourceTree = "<group>"; };
 		D965C7631BE360B800FEA98F /* msyhbd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = msyhbd.ttf; sourceTree = "<group>"; };
 		D965C7641BE360B800FEA98F /* STHeiti-Light.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "STHeiti-Light.ttc"; sourceTree = "<group>"; };
+		D965C7691BE3D17000FEA98F /* MZIncomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MZIncomeController.swift; sourceTree = "<group>"; };
+		D965C76B1BE524ED00FEA98F /* DaliyIncomeInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaliyIncomeInfo.swift; sourceTree = "<group>"; };
+		D965C76D1BE5250200FEA98F /* OrderInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderInfo.swift; sourceTree = "<group>"; };
 		D983EC461BD21FFA0068F89A /* MZLaundry-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MZLaundry-Bridging-Header.h"; sourceTree = "<group>"; };
 		D983EC541BD27C870068F89A /* MZTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MZTabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,6 +137,7 @@
 				D965C7421BE347F100FEA98F /* MainTabController.swift */,
 				D965C7431BE347F100FEA98F /* MZSplashViewController.swift */,
 				D965C7441BE347F100FEA98F /* UserViewController.swift */,
+				D965C7691BE3D17000FEA98F /* MZIncomeController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -138,6 +145,8 @@
 		D965C74A1BE3481400FEA98F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D965C76B1BE524ED00FEA98F /* DaliyIncomeInfo.swift */,
+				D965C76D1BE5250200FEA98F /* OrderInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -311,14 +320,17 @@
 				D983EC551BD27C870068F89A /* MZTabBar.swift in Sources */,
 				D95A6A031BC6A18F008FA6BC /* AppDelegate.swift in Sources */,
 				D965C7601BE35E7C00FEA98F /* HttpTool.swift in Sources */,
+				D965C76C1BE524ED00FEA98F /* DaliyIncomeInfo.swift in Sources */,
 				D965C7491BE347F100FEA98F /* UserViewController.swift in Sources */,
 				D965C7461BE347F100FEA98F /* LoginViewController.swift in Sources */,
+				D965C76A1BE3D17000FEA98F /* MZIncomeController.swift in Sources */,
 				D965C75F1BE35E7C00FEA98F /* CustomColors.swift in Sources */,
 				D965C75E1BE35E7C00FEA98F /* Constants.swift in Sources */,
 				D965C7471BE347F100FEA98F /* MainTabController.swift in Sources */,
 				D965C7451BE347F100FEA98F /* IndexViewController.swift in Sources */,
 				D965C7481BE347F100FEA98F /* MZSplashViewController.swift in Sources */,
 				D965C74D1BE3484600FEA98F /* CustomContentView.swift in Sources */,
+				D965C76E1BE5250200FEA98F /* OrderInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

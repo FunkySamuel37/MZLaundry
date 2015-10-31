@@ -42,8 +42,8 @@ class HttpTool {
             print("4")
             if (error == nil){
                 //如果没错就开始解析JSON
-                let json = JSON(data: data as NSData!)
-                let ads = json["ads"]
+                let json    = JSON(data: data as NSData!)
+                let ads     = json["ads"]
                 var address = [String]()
                 for i in 0..<ads.count {
                     if let imageAddress = ads[i]["image"].string{
@@ -54,6 +54,33 @@ class HttpTool {
                 completionHandler(urls: address)
                 
             }
+        }
+    }
+    
+    func getIncomeInfo(completionHandler: (incomeInfo: [String: AnyObject])->Void){
+        
+        self.getRequest(NetInfo.GET_INCOME_INFO, parameters: nil) { (data, error) -> Void in
+            
+            if error == nil{
+                
+//                do{
+//                    let dataDic = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments) as! NSDictionary
+////                    print(dataDic)
+//                    let baseSalary   = dataDic.objectForKey("yearlyIncome") as! Int
+//                    let balancing    = dataDic.objectForKey("balancing") as! Bool
+//                    let yearlyIncome = dataDic.objectForKey("yearlyIncome") as! Int
+//                    let dailyIncome  = dataDic.objectForKey("dailyIncome") as! NSArray
+//                    
+//                }catch{
+//                    
+//                }
+                
+                let json = JSON(data: data!)
+                let yearlyIncome = json["yearlyIncome"].intValue
+                let balancing = json["balancing"].boolValue
+                print(balancing)
+            }
+            
         }
     }
     

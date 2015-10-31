@@ -11,4 +11,5 @@ import UIKit
 struct NetInfo {
     static let WEB_SERVER       = "http://wentao.uicp.cn:7070/"
     static let GET_ADS_DATA     = "demo/ads.json"
+    static let GET_INCOME_INFO  = "demo/income.json"
 }
