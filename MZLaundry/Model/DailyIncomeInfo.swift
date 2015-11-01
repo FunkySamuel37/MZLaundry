@@ -1,5 +1,5 @@
 //
-//  DaliyIncomeInfo.swift
+//  DailyIncomeInfo.swift
 //  MZLaundry
 //
 //  Created by Samuel37 on 15/11/1.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DaliyIncomeInfo: NSObject {
+class DailyIncomeInfo: NSObject {
     var date:String = ""
     var orders:[OrderInfo] = []
 

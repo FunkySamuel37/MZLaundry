@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		12C704659369B91D3026B83A /* Pods_MZLaundry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F1B57BF0B66FA5978DD5C9 /* Pods_MZLaundry.framework */; };
+		D93F3C0D1BE53F6700CCAFFC /* IncomeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F3C0C1BE53F6700CCAFFC /* IncomeInfo.swift */; settings = {ASSET_TAGS = (); }; };
+		D93F3C111BE5DBAF00CCAFFC /* IncomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F3C101BE5DBAF00CCAFFC /* IncomeCell.swift */; settings = {ASSET_TAGS = (); }; };
 		D95A6A031BC6A18F008FA6BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95A6A021BC6A18F008FA6BC /* AppDelegate.swift */; };
 		D95A6A081BC6A18F008FA6BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95A6A061BC6A18F008FA6BC /* Main.storyboard */; };
 		D95A6A0B1BC6A18F008FA6BC /* MZLaundry.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D95A6A091BC6A18F008FA6BC /* MZLaundry.xcdatamodeld */; };
@@ -27,7 +29,7 @@
 		D965C7671BE360B800FEA98F /* msyhbd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D965C7631BE360B800FEA98F /* msyhbd.ttf */; settings = {ASSET_TAGS = (); }; };
 		D965C7681BE360B800FEA98F /* STHeiti-Light.ttc in Resources */ = {isa = PBXBuildFile; fileRef = D965C7641BE360B800FEA98F /* STHeiti-Light.ttc */; settings = {ASSET_TAGS = (); }; };
 		D965C76A1BE3D17000FEA98F /* MZIncomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D965C7691BE3D17000FEA98F /* MZIncomeController.swift */; settings = {ASSET_TAGS = (); }; };
-		D965C76C1BE524ED00FEA98F /* DaliyIncomeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D965C76B1BE524ED00FEA98F /* DaliyIncomeInfo.swift */; settings = {ASSET_TAGS = (); }; };
+		D965C76C1BE524ED00FEA98F /* DailyIncomeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D965C76B1BE524ED00FEA98F /* DailyIncomeInfo.swift */; settings = {ASSET_TAGS = (); }; };
 		D965C76E1BE5250200FEA98F /* OrderInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D965C76D1BE5250200FEA98F /* OrderInfo.swift */; settings = {ASSET_TAGS = (); }; };
 		D983EC551BD27C870068F89A /* MZTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D983EC541BD27C870068F89A /* MZTabBar.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -36,6 +38,8 @@
 		06F1B57BF0B66FA5978DD5C9 /* Pods_MZLaundry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MZLaundry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B836AEC5B701C7BE5400B54 /* Pods-MZLaundry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MZLaundry.release.xcconfig"; path = "Pods/Target Support Files/Pods-MZLaundry/Pods-MZLaundry.release.xcconfig"; sourceTree = "<group>"; };
 		AD16E507BFFE67240483D800 /* Pods-MZLaundry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MZLaundry.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MZLaundry/Pods-MZLaundry.debug.xcconfig"; sourceTree = "<group>"; };
+		D93F3C0C1BE53F6700CCAFFC /* IncomeInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomeInfo.swift; sourceTree = "<group>"; };
+		D93F3C101BE5DBAF00CCAFFC /* IncomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomeCell.swift; sourceTree = "<group>"; };
 		D95A69FF1BC6A18F008FA6BC /* MZLaundry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MZLaundry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D95A6A021BC6A18F008FA6BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D95A6A071BC6A18F008FA6BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,7 +61,7 @@
 		D965C7631BE360B800FEA98F /* msyhbd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = msyhbd.ttf; sourceTree = "<group>"; };
 		D965C7641BE360B800FEA98F /* STHeiti-Light.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "STHeiti-Light.ttc"; sourceTree = "<group>"; };
 		D965C7691BE3D17000FEA98F /* MZIncomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MZIncomeController.swift; sourceTree = "<group>"; };
-		D965C76B1BE524ED00FEA98F /* DaliyIncomeInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaliyIncomeInfo.swift; sourceTree = "<group>"; };
+		D965C76B1BE524ED00FEA98F /* DailyIncomeInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyIncomeInfo.swift; sourceTree = "<group>"; };
 		D965C76D1BE5250200FEA98F /* OrderInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderInfo.swift; sourceTree = "<group>"; };
 		D983EC461BD21FFA0068F89A /* MZLaundry-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MZLaundry-Bridging-Header.h"; sourceTree = "<group>"; };
 		D983EC541BD27C870068F89A /* MZTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MZTabBar.swift; sourceTree = "<group>"; };
@@ -145,8 +149,9 @@
 		D965C74A1BE3481400FEA98F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D965C76B1BE524ED00FEA98F /* DaliyIncomeInfo.swift */,
+				D965C76B1BE524ED00FEA98F /* DailyIncomeInfo.swift */,
 				D965C76D1BE5250200FEA98F /* OrderInfo.swift */,
+				D93F3C0C1BE53F6700CCAFFC /* IncomeInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				D965C74C1BE3484600FEA98F /* CustomContentView.swift */,
+				D93F3C101BE5DBAF00CCAFFC /* IncomeCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -318,12 +324,14 @@
 			files = (
 				D95A6A0B1BC6A18F008FA6BC /* MZLaundry.xcdatamodeld in Sources */,
 				D983EC551BD27C870068F89A /* MZTabBar.swift in Sources */,
+				D93F3C0D1BE53F6700CCAFFC /* IncomeInfo.swift in Sources */,
 				D95A6A031BC6A18F008FA6BC /* AppDelegate.swift in Sources */,
 				D965C7601BE35E7C00FEA98F /* HttpTool.swift in Sources */,
-				D965C76C1BE524ED00FEA98F /* DaliyIncomeInfo.swift in Sources */,
+				D965C76C1BE524ED00FEA98F /* DailyIncomeInfo.swift in Sources */,
 				D965C7491BE347F100FEA98F /* UserViewController.swift in Sources */,
 				D965C7461BE347F100FEA98F /* LoginViewController.swift in Sources */,
 				D965C76A1BE3D17000FEA98F /* MZIncomeController.swift in Sources */,
+				D93F3C111BE5DBAF00CCAFFC /* IncomeCell.swift in Sources */,
 				D965C75F1BE35E7C00FEA98F /* CustomColors.swift in Sources */,
 				D965C75E1BE35E7C00FEA98F /* Constants.swift in Sources */,
 				D965C7471BE347F100FEA98F /* MainTabController.swift in Sources */,

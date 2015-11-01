@@ -57,7 +57,7 @@ class HttpTool {
         }
     }
     
-    func getIncomeInfo(completionHandler: (incomeInfo: [String: AnyObject])->Void){
+    func getIncomeInfo(completionHandler: (incomeInfo: IncomeInfo)->Void){
         
         self.getRequest(NetInfo.GET_INCOME_INFO, parameters: nil) { (data, error) -> Void in
             
@@ -75,13 +75,41 @@ class HttpTool {
 //                    
 //                }
                 
-                let json = JSON(data: data!)
-                let yearlyIncome = json["yearlyIncome"].intValue
-                let balancing = json["balancing"].boolValue
-                print(balancing)
+                let json            = JSON(data: data!)
+                
+                let incomeObj          = IncomeInfo()
+                incomeObj.yearlyIncome    = json["yearlyIncome"].intValue
+                incomeObj.balancing       = json["balancing"].boolValue
+                incomeObj.baseSalary      = json["baseSalary"].intValue
+                let dailyIncomeJson = json["dailyIncome"]
+                
+                for i in 0..<dailyIncomeJson.count {
+                    let dailyJson  = dailyIncomeJson[i]
+                    let dailyObj   = DailyIncomeInfo()
+                    dailyObj.date = dailyJson["date"].stringValue
+                    let ordersJson = dailyJson["orders"]
+
+                    for j in 0..<ordersJson.count{
+                        let orderJson = ordersJson[j]
+                        let orderObj  = OrderInfo()
+                        orderObj.orderId     = orderJson["orderId"].stringValue
+                        orderObj.orderAmount = orderJson["orderAmount"].intValue
+                        orderObj.income      = orderJson["income"].intValue
+                        orderObj.time        = orderJson["time"].stringValue
+                        print(orderObj.time)
+                        dailyObj.orders.append(orderObj)
+                    }
+                    
+                    incomeObj.dailyIncome.append(dailyObj)
+                }
+                
+                completionHandler(incomeInfo: incomeObj)
             }
-            
         }
     }
+    
+    
+    
+    
     
 }

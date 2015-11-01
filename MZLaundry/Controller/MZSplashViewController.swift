@@ -42,25 +42,25 @@ class MZSplashViewController: UIViewController, UIScrollViewDelegate {
     
     func setupViews(){
         //scrollView
-        self.myScrollView = UIScrollView(frame: screenSize)
+        myScrollView             = UIScrollView(frame: screenSize)
         myScrollView.contentSize = CGSize(width: CGFloat(imageArr.count) * self.screenSize.width, height: screenSize.height)
         for i in 0..<self.imageArr.count {
             let imageView = UIImageView(frame: CGRect(x: self.screenSize.width * CGFloat(i), y: 0, width: self.screenSize.width, height: self.screenSize.height))
             imageView.image = UIImage(named: self.imageArr[i])
             myScrollView.addSubview(imageView)
         }
-        
+
         myScrollView.showsHorizontalScrollIndicator = false
-        myScrollView.showsVerticalScrollIndicator = false
-        
-        myScrollView.pagingEnabled = true
+        myScrollView.showsVerticalScrollIndicator   = false
+        myScrollView.pagingEnabled                  = true
+        myScrollView.delegate                       = self
         self.view.addSubview(myScrollView)
-        myScrollView.delegate = self
+
         
         //pageControl
-        pageControl = UIPageControl(frame: CGRect(x: (screenSize.width-150)/2, y: screenSize.height-150, width: 150, height: 40))
+        pageControl               = UIPageControl(frame: CGRect(x: (screenSize.width-150)/2, y: screenSize.height-150, width: 150, height: 40))
         pageControl.numberOfPages = self.imageArr.count
-        pageControl.currentPage = 0
+        pageControl.currentPage   = 0
         self.view.addSubview(pageControl)
         
         //buttom

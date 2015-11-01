@@ -19,9 +19,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         let isOpened = NSUserDefaults.standardUserDefaults().boolForKey("isOpened")
-        
-        if isOpened {
+        print(isOpened)
+        if isOpened == true {
             let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("loginViewController")
+            let naviController = UINavigationController(rootViewController: vc)
+            naviController.automaticallyAdjustsScrollViewInsets = false
+            naviController.navigationBarHidden = true
+            self.window?.rootViewController = naviController
             
         } else {
             NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isOpened")
