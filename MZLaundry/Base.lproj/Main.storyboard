@@ -23,6 +23,7 @@
             <string>STHeitiTC-Light</string>
             <string>STHeitiTC-Light</string>
             <string>STHeitiSC-Light</string>
+            <string>STHeitiTC-Light</string>
         </mutableArray>
         <mutableArray key="msyh.ttf">
             <string>MicrosoftYaHei</string>
@@ -85,7 +86,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="绑定手机登录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4QT-DZ-Tmo">
-                                        <rect key="frame" x="104.5" y="31.5" width="111.5" height="21"/>
+                                        <rect key="frame" x="106.5" y="29.5" width="108" height="25.5"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="18"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -222,9 +223,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="更多" image="2-1-tb4-1" selectedImage="2-1-tb4-2" id="JaP-Fy-bPR">
-                        <inset key="imageInsets" minX="3" minY="3" maxX="3" maxY="3"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="更多" id="JaP-Fy-bPR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Fx-mM-i79" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -269,7 +268,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="李小姐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xew-WQ-MbC">
-                                <rect key="frame" x="48" y="60" width="56" height="18"/>
+                                <rect key="frame" x="48" y="60" width="54" height="18"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="18" id="5ez-C2-raz"/>
@@ -475,9 +474,7 @@
                             <constraint firstItem="AmU-aP-DqX" firstAttribute="width" secondItem="IJR-4r-9Ty" secondAttribute="width" id="zrh-gd-jBu"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="我" image="2-1-tb3-1" selectedImage="2-1-tb3-2" id="IIn-V7-jzh">
-                        <inset key="imageInsets" minX="3" minY="3" maxX="3" maxY="3"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="我" id="IIn-V7-jzh"/>
                     <connections>
                         <outlet property="userNameLabel" destination="xew-WQ-MbC" id="y2Z-eF-oGf"/>
                         <outlet property="userPhoneNumLabel" destination="tCS-Aj-ohq" id="ejm-Eh-OGe"/>
@@ -499,44 +496,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J4c-XX-Pc9">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Zz-NM-29E">
-                                        <rect key="frame" x="12" y="30" width="11" height="22"/>
-                                        <animations/>
-                                        <state key="normal" image="6-8-3"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYd-HV-agi">
-                                        <rect key="frame" x="233" y="31" width="75" height="20"/>
-                                        <animations/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="75" id="EpW-2G-W9i"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="14"/>
-                                        <inset key="imageEdgeInsets" minX="65" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="结算账户" image="6-8-1"/>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的收益" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOL-yV-QnF">
-                                        <rect key="frame" x="121" y="30" width="78.5" height="22"/>
-                                        <animations/>
-                                        <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="19"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <animations/>
-                                <color key="backgroundColor" red="0.15686274509803921" green="0.80000000000000004" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="1Zz-NM-29E" firstAttribute="leading" secondItem="J4c-XX-Pc9" secondAttribute="leading" constant="12" id="7gZ-Mq-b18"/>
-                                    <constraint firstItem="vOL-yV-QnF" firstAttribute="top" secondItem="J4c-XX-Pc9" secondAttribute="top" constant="30" id="Hz9-2R-j8p"/>
-                                    <constraint firstAttribute="trailing" secondItem="XYd-HV-agi" secondAttribute="trailing" constant="12" id="RtI-h3-M1j"/>
-                                    <constraint firstAttribute="height" constant="64" id="mIH-vd-RCf"/>
-                                    <constraint firstItem="vOL-yV-QnF" firstAttribute="centerX" secondItem="J4c-XX-Pc9" secondAttribute="centerX" id="mbT-Uf-V6v"/>
-                                    <constraint firstItem="1Zz-NM-29E" firstAttribute="centerY" secondItem="vOL-yV-QnF" secondAttribute="centerY" id="mfr-qb-KCf"/>
-                                    <constraint firstItem="XYd-HV-agi" firstAttribute="centerY" secondItem="vOL-yV-QnF" secondAttribute="centerY" id="y4f-Ci-Zaa"/>
-                                </constraints>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KRv-Th-Zds">
                                 <rect key="frame" x="0.0" y="64" width="320" height="70"/>
                                 <subviews>
@@ -559,14 +518,14 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5月" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4i-Eq-FpW">
-                                                <rect key="frame" x="0.0" y="25" width="33" height="17.5"/>
+                                                <rect key="frame" x="0.0" y="21.5" width="33" height="21"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="15"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6-8-3-1" translatesAutoresizingMaskIntoConstraints="NO" id="N3K-uT-mm3">
-                                                <rect key="frame" x="28" y="28" width="19" height="14.5"/>
+                                                <rect key="frame" x="28" y="24.5" width="19" height="18"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="19" id="7x8-Fv-DwY"/>
@@ -596,14 +555,14 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未结算" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysa-V4-DRl">
-                                        <rect key="frame" x="241" y="25" width="53" height="20"/>
+                                        <rect key="frame" x="243" y="23" width="51" height="24"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="总收入(元)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWY-w7-G2x">
-                                        <rect key="frame" x="133" y="6" width="54.5" height="13"/>
+                                        <rect key="frame" x="134.5" y="6" width="51.5" height="15.5"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="11"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -640,7 +599,7 @@
                                         </constraints>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xdW-7D-tw5">
-                                        <rect key="frame" x="97" y="25" width="91" height="1"/>
+                                        <rect key="frame" x="97" y="25" width="93" height="1"/>
                                         <animations/>
                                         <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -648,16 +607,9 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="月总收益:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqU-bx-rqu">
-                                        <rect key="frame" x="193" y="22" width="53.5" height="14"/>
+                                        <rect key="frame" x="195" y="19" width="51.5" height="17"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="12"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4000元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDv-I3-PH2">
-                                        <rect key="frame" x="247" y="12" width="60.5" height="24"/>
-                                        <animations/>
-                                        <fontDescription key="fontDescription" name="MicrosoftYaHei" family="Microsoft YaHei" pointSize="18"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -665,6 +617,13 @@
                                         <rect key="frame" x="28" y="15" width="64" height="21.5"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="MicrosoftYaHei" family="Microsoft YaHei" pointSize="16"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4000元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDv-I3-PH2">
+                                        <rect key="frame" x="247" y="12" width="60.5" height="24"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="MicrosoftYaHei" family="Microsoft YaHei" pointSize="18"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -712,13 +671,6 @@
                                                     <color key="textColor" red="0.34509803921568627" green="0.34509803921568627" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="121212121" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dko-3d-Xf8">
-                                                    <rect key="frame" x="58" y="8" width="79.5" height="20"/>
-                                                    <animations/>
-                                                    <fontDescription key="fontDescription" name="MicrosoftYaHei" family="Microsoft YaHei" pointSize="15"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hoo-mK-04d">
                                                     <rect key="frame" x="70" y="39" width="33" height="20"/>
                                                     <animations/>
@@ -727,24 +679,31 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收益：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LxE-WL-o8j">
-                                                    <rect key="frame" x="235" y="74" width="36" height="16"/>
+                                                    <rect key="frame" x="234" y="74" width="36" height="16"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" name="MicrosoftYaHei" family="Microsoft YaHei" pointSize="12"/>
                                                     <color key="textColor" red="0.34509803921568627" green="0.34509803921568627" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="13" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17P-ID-rm8">
-                                                    <rect key="frame" x="270.5" y="66" width="39.5" height="24"/>
+                                                    <rect key="frame" x="270" y="66" width="39.5" height="24"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" name="MicrosoftYaHei" family="Microsoft YaHei" pointSize="18"/>
                                                     <color key="textColor" red="1" green="0.30196078431372547" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="14" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10日19:20完成" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4es-mG-028">
-                                                    <rect key="frame" x="228.5" y="12" width="81.5" height="16"/>
+                                                    <rect key="frame" x="228" y="12" width="81.5" height="16"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" name="MicrosoftYaHei" family="Microsoft YaHei" pointSize="12"/>
                                                     <color key="textColor" red="0.60784313725490191" green="0.85882352941176465" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="121212121" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dko-3d-Xf8">
+                                                    <rect key="frame" x="58" y="8" width="79.5" height="20"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" name="MicrosoftYaHei" family="Microsoft YaHei" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -780,6 +739,47 @@
                                     <outlet property="delegate" destination="vQ1-Pj-ygN" id="U7Z-AH-u4c"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J4c-XX-Pc9">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Zz-NM-29E">
+                                        <rect key="frame" x="12" y="32.5" width="11" height="22"/>
+                                        <animations/>
+                                        <state key="normal" image="6-8-3"/>
+                                        <connections>
+                                            <action selector="dismissViewController:" destination="vQ1-Pj-ygN" eventType="touchUpInside" id="qiV-Jb-2HH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYd-HV-agi">
+                                        <rect key="frame" x="233" y="33.5" width="75" height="20"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="EpW-2G-W9i"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="14"/>
+                                        <inset key="imageEdgeInsets" minX="65" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="结算账户" image="6-8-1"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的收益" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOL-yV-QnF">
+                                        <rect key="frame" x="122.5" y="30" width="76" height="27"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="19"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.15686274509803921" green="0.80000000000000004" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="1Zz-NM-29E" firstAttribute="leading" secondItem="J4c-XX-Pc9" secondAttribute="leading" constant="12" id="7gZ-Mq-b18"/>
+                                    <constraint firstItem="vOL-yV-QnF" firstAttribute="top" secondItem="J4c-XX-Pc9" secondAttribute="top" constant="30" id="Hz9-2R-j8p"/>
+                                    <constraint firstAttribute="trailing" secondItem="XYd-HV-agi" secondAttribute="trailing" constant="12" id="RtI-h3-M1j"/>
+                                    <constraint firstAttribute="height" constant="64" id="mIH-vd-RCf"/>
+                                    <constraint firstItem="vOL-yV-QnF" firstAttribute="centerX" secondItem="J4c-XX-Pc9" secondAttribute="centerX" id="mbT-Uf-V6v"/>
+                                    <constraint firstItem="1Zz-NM-29E" firstAttribute="centerY" secondItem="vOL-yV-QnF" secondAttribute="centerY" id="mfr-qb-KCf"/>
+                                    <constraint firstItem="XYd-HV-agi" firstAttribute="centerY" secondItem="vOL-yV-QnF" secondAttribute="centerY" id="y4f-Ci-Zaa"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -827,14 +827,14 @@
                                         <rect key="frame" x="4" y="25" width="70" height="40"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="成都" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gQ-ux-5i8">
-                                                <rect key="frame" x="10" y="8" width="32" height="22.5"/>
+                                                <rect key="frame" x="10" y="10" width="33" height="18.5"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="16"/>
                                                 <color key="textColor" red="0.15686274510000001" green="0.80000000000000004" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bur-iO-I7t">
-                                                <rect key="frame" x="28" y="-2" width="44" height="44"/>
+                                                <rect key="frame" x="29" y="-2" width="44" height="44"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="eT8-Cz-1jD"/>
@@ -881,6 +881,9 @@
                                 <rect key="frame" x="15" y="204" width="140" height="80"/>
                                 <animations/>
                                 <state key="normal" backgroundImage="1-0"/>
+                                <connections>
+                                    <action selector="itemLaundry:" destination="aUh-v7-DM1" eventType="touchUpInside" id="Q5A-h8-Uhs"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2P-n1-8Cg">
                                 <rect key="frame" x="15" y="294" width="290" height="65"/>
@@ -901,10 +904,15 @@
                                 <rect key="frame" x="165" y="204" width="140" height="80"/>
                                 <animations/>
                                 <state key="normal" backgroundImage="2-0"/>
+                                <connections>
+                                    <action selector="packageLaundry:" destination="aUh-v7-DM1" eventType="touchUpInside" id="piI-Q6-8hY"/>
+                                </connections>
                             </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="KXe-KB-OTH">
                                 <rect key="frame" x="229" y="157" width="71" height="37"/>
                                 <animations/>
+                                <color key="pageIndicatorTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.15686274510000001" green="0.80000000000000004" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                             </pageControl>
                         </subviews>
                         <animations/>
@@ -941,9 +949,7 @@
                             <constraint firstItem="Zh3-qw-frw" firstAttribute="top" secondItem="eL2-iv-okf" secondAttribute="bottom" constant="10" id="qms-aU-HEq"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="首页" image="2-1-tb1-1" selectedImage="2-1-tb1-2" id="SbL-l6-wNq">
-                        <inset key="imageInsets" minX="3" minY="3" maxX="3" maxY="3"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="首页" id="SbL-l6-wNq"/>
                     <connections>
                         <outlet property="adPageControl" destination="KXe-KB-OTH" id="li4-ga-Upc"/>
                         <outlet property="adScrollView" destination="xRB-iY-RfC" id="q14-CW-9G2"/>
@@ -953,10 +959,101 @@
             </objects>
             <point key="canvasLocation" x="1436" y="-585"/>
         </scene>
+        <!--Laundry Item Controller-->
+        <scene sceneID="Lfe-Fk-4fN">
+            <objects>
+                <viewController storyboardIdentifier="LaundryItemController" id="9ji-ys-HiI" customClass="LaundryItemController" customModule="MZLaundry" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Wn-jU-951"/>
+                        <viewControllerLayoutGuide type="bottom" id="7xC-Ia-qpa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="row-6K-tBd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yOh-hh-ln6">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahm-DB-EKA">
+                                        <rect key="frame" x="13" y="31" width="11" height="22"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="11" id="gXg-Kc-0Ry"/>
+                                            <constraint firstAttribute="height" constant="22" id="i2I-5P-11y"/>
+                                        </constraints>
+                                        <state key="normal" image="3-1-1"/>
+                                        <connections>
+                                            <action selector="dismissSelfVC:" destination="9ji-ys-HiI" eventType="touchUpInside" id="OWj-72-TCy"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="件洗" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgf-tI-wZa">
+                                        <rect key="frame" x="142.5" y="29" width="36" height="25.5"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="18"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="fgf-tI-wZa" firstAttribute="centerY" secondItem="ahm-DB-EKA" secondAttribute="centerY" id="5Do-Rf-t6i"/>
+                                    <constraint firstItem="ahm-DB-EKA" firstAttribute="leading" secondItem="yOh-hh-ln6" secondAttribute="leading" constant="13" id="5IS-uq-Qjd"/>
+                                    <constraint firstItem="fgf-tI-wZa" firstAttribute="centerX" secondItem="yOh-hh-ln6" secondAttribute="centerX" id="g83-5M-hzQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="ahm-DB-EKA" secondAttribute="bottom" constant="11" id="igk-kg-u6m"/>
+                                    <constraint firstAttribute="height" constant="64" id="q4a-r8-1B6"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5E2-q0-zpi">
+                                <rect key="frame" x="0.0" y="108" width="320" height="460"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qKl-t2-2jL">
+                                    <size key="itemSize" width="140" height="160"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="15" minY="20" maxX="15" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="laundryItem" id="70D-nr-WcU" customClass="LaundryCell" customModule="MZLaundry" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="20" width="140" height="160"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="140" height="160"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <animations/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5E2-q0-zpi" secondAttribute="trailing" id="5xM-Q5-yi8"/>
+                            <constraint firstAttribute="trailing" secondItem="yOh-hh-ln6" secondAttribute="trailing" id="7XB-xh-jNK"/>
+                            <constraint firstItem="yOh-hh-ln6" firstAttribute="leading" secondItem="row-6K-tBd" secondAttribute="leading" id="Igc-pV-XGM"/>
+                            <constraint firstItem="yOh-hh-ln6" firstAttribute="top" secondItem="row-6K-tBd" secondAttribute="top" id="NvO-xv-qwG"/>
+                            <constraint firstItem="7xC-Ia-qpa" firstAttribute="top" secondItem="5E2-q0-zpi" secondAttribute="bottom" id="Pd1-nj-uqw"/>
+                            <constraint firstItem="5E2-q0-zpi" firstAttribute="leading" secondItem="row-6K-tBd" secondAttribute="leading" id="X66-hV-d7a"/>
+                            <constraint firstItem="5E2-q0-zpi" firstAttribute="top" secondItem="yOh-hh-ln6" secondAttribute="bottom" constant="44" id="bXo-du-1do"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="laundryItemCollection" destination="5E2-q0-zpi" id="KnZ-fz-aa9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="19d-aR-Joi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1814" y="-585"/>
+        </scene>
         <!--洗衣篮-->
         <scene sceneID="VeK-aw-IEa">
             <objects>
-                <viewController id="VRU-oU-gI2" sceneMemberID="viewController">
+                <viewController id="VRU-oU-gI2" customClass="LaundryBasketViewController" customModule="MZLaundry" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dbE-mY-hyo"/>
                         <viewControllerLayoutGuide type="bottom" id="L00-Fl-mwF"/>
@@ -967,18 +1064,16 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="洗衣篮" image="2-1-tb2-1" selectedImage="2-1-tb2-2" id="J7h-aM-ssg">
-                        <inset key="imageInsets" minX="3" minY="3" maxX="3" maxY="3"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="洗衣篮" id="J7h-aM-ssg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i1e-BT-NQD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1436" y="49"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Controller-->
         <scene sceneID="gfZ-F3-xaI">
             <objects>
-                <tabBarController storyboardIdentifier="tabBarViewController" id="Hhg-IB-hjB" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBarViewController" id="Hhg-IB-hjB" customClass="MainTabController" customModule="MZLaundry" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="SR8-ed-SRb" customClass="MZTabBar" customModule="MZLaundry" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -998,36 +1093,29 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1-0" width="280" height="160"/>
+        <image name="1-0" width="130" height="140"/>
         <image name="1-1" width="11" height="17"/>
         <image name="1-2" width="142" height="142"/>
         <image name="1-3" width="142" height="142"/>
         <image name="2-0" width="280" height="160"/>
-        <image name="2-1" width="142" height="142"/>
-        <image name="2-1-tb1-1" width="32" height="32"/>
-        <image name="2-1-tb1-2" width="32" height="32"/>
-        <image name="2-1-tb2-1" width="32" height="32"/>
-        <image name="2-1-tb2-2" width="32" height="32"/>
-        <image name="2-1-tb3-1" width="32" height="32"/>
-        <image name="2-1-tb3-2" width="32" height="32"/>
-        <image name="2-1-tb4-1" width="32" height="32"/>
-        <image name="2-1-tb4-2" width="32" height="32"/>
-        <image name="2-2" width="142" height="142"/>
-        <image name="3-0" width="580" height="130"/>
+        <image name="2-1" width="58" height="48"/>
+        <image name="2-2" width="58" height="48"/>
+        <image name="3-0" width="74" height="48"/>
         <image name="3-1" width="142" height="142"/>
+        <image name="3-1-1" width="11" height="17"/>
         <image name="3-2" width="142" height="142"/>
         <image name="4-0" width="580" height="130"/>
-        <image name="4-1" width="142" height="142"/>
-        <image name="4-2" width="142" height="142"/>
+        <image name="4-1" width="58" height="48"/>
+        <image name="4-2" width="58" height="48"/>
         <image name="5-0" width="580" height="130"/>
-        <image name="5-1" width="142" height="142"/>
-        <image name="5-2" width="142" height="142"/>
+        <image name="5-1" width="34" height="34"/>
+        <image name="5-2" width="34" height="34"/>
         <image name="6" width="78" height="18"/>
         <image name="6-8-1" width="7" height="12"/>
         <image name="6-8-3" width="11" height="17"/>
         <image name="6-8-3-1" width="10" height="7"/>
         <image name="6-8-4" width="15" height="17"/>
-        <image name="7-1" width="11" height="7"/>
+        <image name="7-1" width="580" height="88"/>
         <image name="8-0" width="28" height="38"/>
         <image name="9-0" width="28" height="38"/>
     </resources>

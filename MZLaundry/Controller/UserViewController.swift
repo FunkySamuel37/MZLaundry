@@ -9,45 +9,45 @@
 import UIKit
 
 class UserViewController: UIViewController {
-
-    @IBOutlet weak var userNameLabel: UILabel!
-    @IBOutlet weak var userPhoneNumLabel: UILabel!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        let phoneNum = NSUserDefaults.standardUserDefaults().valueForKey("userPhoneNumber")//("userPhoneNumber")
-        if phoneNum != nil{
-            userPhoneNumLabel.text = String(phoneNum!)
-        }
-        
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+  
+  @IBOutlet weak var userNameLabel: UILabel!
+  @IBOutlet weak var userPhoneNumLabel: UILabel!
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    // Do any additional setup after loading the view.
+    let phoneNum = NSUserDefaults.standardUserDefaults().valueForKey("userPhoneNumber")//("userPhoneNumber")
+    if phoneNum != nil{
+      userPhoneNumLabel.text = String(phoneNum!)
     }
     
+    self.initialize()
+  }
+  
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+  }
+  
+  
+  /*
+  // MARK: - Navigation
+  
+  // In a storyboard-based application, you will often want to do a little preparation before navigation
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+  // Get the new view controller using segue.destinationViewController.
+  // Pass the selected object to the new view controller.
+  }
+  */
+  
+  func initialize(){
+    
+  }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+  @IBAction func goMyIncomeVC(sender: AnyObject) {
+    let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("MZIncomeController")
+    self.presentViewController(vc, animated: true) { () -> Void in
+      
     }
-    */
-
-    func setupViews(){
-        
-        
-        
-    }
-    @IBAction func goMyIncomeVC(sender: AnyObject) {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("MZIncomeController")
-        self.presentViewController(vc, animated: true) { () -> Void in
-            
-        }
-    }
+  }
 }

@@ -23,9 +23,7 @@ class CustomContentView: UIView {
     var _decriptionLabel:UILabel!
     
     var dismissHandler:((view:UIView)-> Void)!
-//    init () {
-//        super.init()
-//    }
+
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -65,6 +63,8 @@ class CustomContentView: UIView {
         self._dismissButton.titleLabel?.textColor = UIColor.whiteColor()
         self._dismissButton.addTarget(self, action: "dismissBtnPressed", forControlEvents: .TouchUpInside)
         self.addSubview(self._dismissButton)
+        
+        
         
     }
     

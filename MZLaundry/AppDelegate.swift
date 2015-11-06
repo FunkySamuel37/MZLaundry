@@ -38,16 +38,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         
-//        for familyName in UIFont.familyNames() {
-//            print("=========FamilyName:" + (familyName ) + "=========")
-//            
-//            for fontName in UIFont.fontNamesForFamilyName(familyName) {
-//                print(fontName)
-//            }
-//            print("--------------\n\n")
-//        }
-        
-        
         return true
     }
 

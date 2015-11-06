@@ -10,11 +10,14 @@
 		12C704659369B91D3026B83A /* Pods_MZLaundry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F1B57BF0B66FA5978DD5C9 /* Pods_MZLaundry.framework */; };
 		D93F3C0D1BE53F6700CCAFFC /* IncomeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F3C0C1BE53F6700CCAFFC /* IncomeInfo.swift */; settings = {ASSET_TAGS = (); }; };
 		D93F3C111BE5DBAF00CCAFFC /* IncomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F3C101BE5DBAF00CCAFFC /* IncomeCell.swift */; settings = {ASSET_TAGS = (); }; };
+		D93F3C131BE71F1F00CCAFFC /* YZPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F3C121BE71F1F00CCAFFC /* YZPopupView.swift */; settings = {ASSET_TAGS = (); }; };
 		D95A6A031BC6A18F008FA6BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95A6A021BC6A18F008FA6BC /* AppDelegate.swift */; };
 		D95A6A081BC6A18F008FA6BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95A6A061BC6A18F008FA6BC /* Main.storyboard */; };
 		D95A6A0B1BC6A18F008FA6BC /* MZLaundry.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D95A6A091BC6A18F008FA6BC /* MZLaundry.xcdatamodeld */; };
 		D95A6A0D1BC6A18F008FA6BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D95A6A0C1BC6A18F008FA6BC /* Assets.xcassets */; };
 		D95A6A101BC6A18F008FA6BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95A6A0E1BC6A18F008FA6BC /* LaunchScreen.storyboard */; };
+		D961821A1BEA3B5600C5F709 /* LaundryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96182191BEA3B5600C5F709 /* LaundryCell.swift */; settings = {ASSET_TAGS = (); }; };
+		D961821C1BEA3BE100C5F709 /* LaundryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D961821B1BEA3BE100C5F709 /* LaundryType.swift */; settings = {ASSET_TAGS = (); }; };
 		D965C7451BE347F100FEA98F /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D965C7401BE347F100FEA98F /* IndexViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D965C7461BE347F100FEA98F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D965C7411BE347F100FEA98F /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D965C7471BE347F100FEA98F /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D965C7421BE347F100FEA98F /* MainTabController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -31,7 +34,12 @@
 		D965C76A1BE3D17000FEA98F /* MZIncomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D965C7691BE3D17000FEA98F /* MZIncomeController.swift */; settings = {ASSET_TAGS = (); }; };
 		D965C76C1BE524ED00FEA98F /* DailyIncomeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D965C76B1BE524ED00FEA98F /* DailyIncomeInfo.swift */; settings = {ASSET_TAGS = (); }; };
 		D965C76E1BE5250200FEA98F /* OrderInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D965C76D1BE5250200FEA98F /* OrderInfo.swift */; settings = {ASSET_TAGS = (); }; };
-		D983EC551BD27C870068F89A /* MZTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D983EC541BD27C870068F89A /* MZTabBar.swift */; settings = {ASSET_TAGS = (); }; };
+		D97ADF931BEC520000B524FF /* ImageResize.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97ADF921BEC520000B524FF /* ImageResize.swift */; settings = {ASSET_TAGS = (); }; };
+		D9A78F641BEB7D5D001835DC /* LaundryBasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A78F631BEB7D5D001835DC /* LaundryBasketViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D9D381831BE774CF00E1BDC8 /* PopViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D381821BE774CF00E1BDC8 /* PopViewType.swift */; settings = {ASSET_TAGS = (); }; };
+		D9E3ABC21BE7C2150020365F /* MyStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E3ABC11BE7C2150020365F /* MyStepper.swift */; settings = {ASSET_TAGS = (); }; };
+		D9E3ABC41BE889CF0020365F /* LaundryItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E3ABC31BE889CF0020365F /* LaundryItemController.swift */; settings = {ASSET_TAGS = (); }; };
+		D9E3ABC61BE8A5C00020365F /* CustomSegement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E3ABC51BE8A5C00020365F /* CustomSegement.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +48,7 @@
 		AD16E507BFFE67240483D800 /* Pods-MZLaundry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MZLaundry.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MZLaundry/Pods-MZLaundry.debug.xcconfig"; sourceTree = "<group>"; };
 		D93F3C0C1BE53F6700CCAFFC /* IncomeInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomeInfo.swift; sourceTree = "<group>"; };
 		D93F3C101BE5DBAF00CCAFFC /* IncomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomeCell.swift; sourceTree = "<group>"; };
+		D93F3C121BE71F1F00CCAFFC /* YZPopupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YZPopupView.swift; sourceTree = "<group>"; };
 		D95A69FF1BC6A18F008FA6BC /* MZLaundry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MZLaundry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D95A6A021BC6A18F008FA6BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D95A6A071BC6A18F008FA6BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,6 +56,8 @@
 		D95A6A0C1BC6A18F008FA6BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D95A6A0F1BC6A18F008FA6BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D95A6A111BC6A18F008FA6BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D96182191BEA3B5600C5F709 /* LaundryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaundryCell.swift; sourceTree = "<group>"; };
+		D961821B1BEA3BE100C5F709 /* LaundryType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaundryType.swift; sourceTree = "<group>"; };
 		D965C7401BE347F100FEA98F /* IndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
 		D965C7411BE347F100FEA98F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D965C7421BE347F100FEA98F /* MainTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
@@ -63,8 +74,13 @@
 		D965C7691BE3D17000FEA98F /* MZIncomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MZIncomeController.swift; sourceTree = "<group>"; };
 		D965C76B1BE524ED00FEA98F /* DailyIncomeInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyIncomeInfo.swift; sourceTree = "<group>"; };
 		D965C76D1BE5250200FEA98F /* OrderInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderInfo.swift; sourceTree = "<group>"; };
+		D97ADF921BEC520000B524FF /* ImageResize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageResize.swift; sourceTree = "<group>"; };
 		D983EC461BD21FFA0068F89A /* MZLaundry-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MZLaundry-Bridging-Header.h"; sourceTree = "<group>"; };
-		D983EC541BD27C870068F89A /* MZTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MZTabBar.swift; sourceTree = "<group>"; };
+		D9A78F631BEB7D5D001835DC /* LaundryBasketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaundryBasketViewController.swift; sourceTree = "<group>"; };
+		D9D381821BE774CF00E1BDC8 /* PopViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopViewType.swift; sourceTree = "<group>"; };
+		D9E3ABC11BE7C2150020365F /* MyStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStepper.swift; sourceTree = "<group>"; };
+		D9E3ABC31BE889CF0020365F /* LaundryItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaundryItemController.swift; sourceTree = "<group>"; };
+		D9E3ABC51BE8A5C00020365F /* CustomSegement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +135,6 @@
 			children = (
 				D95A6A021BC6A18F008FA6BC /* AppDelegate.swift */,
 				D95A6A061BC6A18F008FA6BC /* Main.storyboard */,
-				D983EC541BD27C870068F89A /* MZTabBar.swift */,
 				D95A6A0C1BC6A18F008FA6BC /* Assets.xcassets */,
 				D965C73F1BE347F100FEA98F /* Controller */,
 				D965C74B1BE3481900FEA98F /* View */,
@@ -142,6 +157,8 @@
 				D965C7431BE347F100FEA98F /* MZSplashViewController.swift */,
 				D965C7441BE347F100FEA98F /* UserViewController.swift */,
 				D965C7691BE3D17000FEA98F /* MZIncomeController.swift */,
+				D9E3ABC31BE889CF0020365F /* LaundryItemController.swift */,
+				D9A78F631BEB7D5D001835DC /* LaundryBasketViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -152,6 +169,8 @@
 				D965C76B1BE524ED00FEA98F /* DailyIncomeInfo.swift */,
 				D965C76D1BE5250200FEA98F /* OrderInfo.swift */,
 				D93F3C0C1BE53F6700CCAFFC /* IncomeInfo.swift */,
+				D9D381821BE774CF00E1BDC8 /* PopViewType.swift */,
+				D961821B1BEA3BE100C5F709 /* LaundryType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -159,8 +178,12 @@
 		D965C74B1BE3481900FEA98F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D965C74C1BE3484600FEA98F /* CustomContentView.swift */,
 				D93F3C101BE5DBAF00CCAFFC /* IncomeCell.swift */,
+				D93F3C121BE71F1F00CCAFFC /* YZPopupView.swift */,
+				D9E3ABC11BE7C2150020365F /* MyStepper.swift */,
+				D9E3ABC51BE8A5C00020365F /* CustomSegement.swift */,
+				D96182191BEA3B5600C5F709 /* LaundryCell.swift */,
+				D965C74C1BE3484600FEA98F /* CustomContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,6 +205,7 @@
 				D965C75B1BE35E7C00FEA98F /* Constants.swift */,
 				D965C75C1BE35E7C00FEA98F /* CustomColors.swift */,
 				D965C75D1BE35E7C00FEA98F /* HttpTool.swift */,
+				D97ADF921BEC520000B524FF /* ImageResize.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -323,14 +347,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				D95A6A0B1BC6A18F008FA6BC /* MZLaundry.xcdatamodeld in Sources */,
-				D983EC551BD27C870068F89A /* MZTabBar.swift in Sources */,
+				D93F3C131BE71F1F00CCAFFC /* YZPopupView.swift in Sources */,
+				D97ADF931BEC520000B524FF /* ImageResize.swift in Sources */,
+				D9E3ABC21BE7C2150020365F /* MyStepper.swift in Sources */,
+				D9E3ABC41BE889CF0020365F /* LaundryItemController.swift in Sources */,
 				D93F3C0D1BE53F6700CCAFFC /* IncomeInfo.swift in Sources */,
 				D95A6A031BC6A18F008FA6BC /* AppDelegate.swift in Sources */,
 				D965C7601BE35E7C00FEA98F /* HttpTool.swift in Sources */,
 				D965C76C1BE524ED00FEA98F /* DailyIncomeInfo.swift in Sources */,
+				D961821A1BEA3B5600C5F709 /* LaundryCell.swift in Sources */,
 				D965C7491BE347F100FEA98F /* UserViewController.swift in Sources */,
 				D965C7461BE347F100FEA98F /* LoginViewController.swift in Sources */,
+				D9A78F641BEB7D5D001835DC /* LaundryBasketViewController.swift in Sources */,
 				D965C76A1BE3D17000FEA98F /* MZIncomeController.swift in Sources */,
+				D961821C1BEA3BE100C5F709 /* LaundryType.swift in Sources */,
+				D9E3ABC61BE8A5C00020365F /* CustomSegement.swift in Sources */,
 				D93F3C111BE5DBAF00CCAFFC /* IncomeCell.swift in Sources */,
 				D965C75F1BE35E7C00FEA98F /* CustomColors.swift in Sources */,
 				D965C75E1BE35E7C00FEA98F /* Constants.swift in Sources */,
@@ -339,6 +370,7 @@
 				D965C7481BE347F100FEA98F /* MZSplashViewController.swift in Sources */,
 				D965C74D1BE3484600FEA98F /* CustomContentView.swift in Sources */,
 				D965C76E1BE5250200FEA98F /* OrderInfo.swift in Sources */,
+				D9D381831BE774CF00E1BDC8 /* PopViewType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
