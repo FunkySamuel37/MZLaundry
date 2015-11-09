@@ -12,6 +12,7 @@ class LaundryItemController: UIViewController {
   var clothesSegment: CustomSegement!
   let screenSize = UIScreen.mainScreen().bounds
   let reuseIdentifier = "laundryItem"
+  let cartSingleton = CartSingleton.sharedInstance
   
   var typeInfoArray = [PopViewType(name: "T恤", price: "8", desc: "短袖T恤，短袖衬衫", image: "clothes_0"), PopViewType(name: "衬衣", price: "8", desc: "短袖T恤，短袖衬衫", image: "clothes_1"), PopViewType(name: "长风衣", price: "12", desc: "短袖T恤，短袖衬衫", image: "clothes_2"), PopViewType(name: "短风衣", price: "18", desc: "短袖T恤，短袖衬衫", image: "clothes_3"), PopViewType(name: "外套", price: "15", desc: "短袖T恤，短袖衬衫", image: "clothes_4")]
   @IBOutlet weak var laundryItemCollection: UICollectionView!
@@ -95,7 +96,8 @@ extension LaundryItemController: UICollectionViewDataSource {
   func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
     let type = (collectionView.cellForItemAtIndexPath(indexPath) as! LaundryCell).typeInfo!
     
-    YZPopupView.show(type)
+    let popView = YZPopupView.show(type)
+    popView.delegate = self
   }
   
 }
@@ -105,5 +107,13 @@ extension LaundryItemController: UICollectionViewDelegateFlowLayout {
     let width = (screenSize.width - 30 - 10) / 2
     let height = width * CGFloat(160.0 / 140.0)
     return CGSize(width: width, height: height)
+  }
+}
+
+extension LaundryItemController:AddToCartDelegate{
+  func addToCart(item:PopViewType,count:Int) {
+    self.cartSingleton.storeCartInfo(item, count: count)
+    
+    print(cartSingleton.cartItemArray.count)
   }
 }

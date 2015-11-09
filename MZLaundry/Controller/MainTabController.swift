@@ -22,7 +22,6 @@ class MainTabController: UITabBarController {
         let selectedImage = UIImage(named: "2-1-tb\(i+1)-2")
         let newselectedimage = selectedImage?.resizeImageWith(newSize).imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
         vc.tabBarItem = UITabBarItem(title: titles[i], image: newimage, selectedImage: newselectedimage)
-        
       }
       
       tabBar.tintColor = UIColor(red: 119/255, green: 202/255, blue: 249/255, alpha: 1.0)

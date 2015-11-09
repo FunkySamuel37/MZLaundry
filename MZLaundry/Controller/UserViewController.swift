@@ -22,6 +22,9 @@ class UserViewController: UIViewController {
     }
     
     self.initialize()
+    
+    let cartSingleton = CartSingleton.sharedInstance
+
   }
   
   override func didReceiveMemoryWarning() {

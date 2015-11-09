@@ -13,9 +13,9 @@ class IndexViewController: UIViewController, UIScrollViewDelegate {
   @IBOutlet weak var adScrollView: UIScrollView!
   @IBOutlet weak var adPageControl: UIPageControl!
   var screenSize:CGRect = UIScreen.mainScreen().bounds
-  
   var adImageViewArray: [UIImageView]! = []
-  
+  let cartSingleton = CartSingleton.sharedInstance
+
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -109,7 +109,8 @@ extension IndexViewController{
   @IBAction func packageLaundry(sender: AnyObject) {
     let type = PopViewType(name: "袋洗",price: "68", desc: "装多少，洗多少！\n\n亲，皮衣、真丝内衣、袜子、鞋不要装哦！", image: "3-6-0")
     
-    YZPopupView.show(type)
+    let popView = YZPopupView.show(type)
+    popView.delegate = self
   }
   
   @IBAction func itemLaundry(sender: UIButton) {
@@ -119,5 +120,13 @@ extension IndexViewController{
     self.presentViewController(vc, animated: true) { () -> Void in
       
     }
+  }
+}
+
+extension IndexViewController:AddToCartDelegate{
+  func addToCart(item:PopViewType,count:Int) {
+    self.cartSingleton.storeCartInfo(item, count: count)
+    
+    print(cartSingleton.cartItemArray.count)
   }
 }

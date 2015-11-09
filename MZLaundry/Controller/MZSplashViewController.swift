@@ -17,10 +17,7 @@ class MZSplashViewController: UIViewController, UIScrollViewDelegate {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    self.automaticallyAdjustsScrollViewInsets = false
     self.setupViews()
-    
-    
   }
   
   override func didReceiveMemoryWarning() {
@@ -30,6 +27,8 @@ class MZSplashViewController: UIViewController, UIScrollViewDelegate {
   
   
   func setupViews(){
+    
+    self.automaticallyAdjustsScrollViewInsets = false
     //scrollView
     myScrollView             = UIScrollView(frame: screenSize)
     myScrollView.contentSize = CGSize(width: CGFloat(imageArr.count) * self.screenSize.width, height: screenSize.height)
