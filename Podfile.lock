@@ -5,6 +5,7 @@ PODS:
   - SDWebImage (3.7.3):
     - SDWebImage/Core (= 3.7.3)
   - SDWebImage/Core (3.7.3)
+  - SnapKit (0.15.0)
   - SwiftyJSON (2.3.0)
 
 DEPENDENCIES:
@@ -12,6 +13,7 @@ DEPENDENCIES:
   - CXCardView
   - RJImageLoader
   - SDWebImage
+  - SnapKit
   - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -19,6 +21,7 @@ SPEC CHECKSUMS:
   CXCardView: 46aa5ef9daee36fd2d16197b757b3f97ca177ebd
   RJImageLoader: f0d9edebeb7837feb0ce51759826900645770db7
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+  SnapKit: 4962eed2ee18e48cbd2b2292fffc57efe7235f87
   SwiftyJSON: 8d6b61a70277ef2a5d710d372e06e7e2d87fb9e4
 
 COCOAPODS: 0.39.0

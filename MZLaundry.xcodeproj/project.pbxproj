@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		12C704659369B91D3026B83A /* Pods_MZLaundry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F1B57BF0B66FA5978DD5C9 /* Pods_MZLaundry.framework */; };
 		D90B85721BEF085200ADD96B /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B85711BEF085200ADD96B /* CartTableViewCell.swift */; };
+		D90B858A1BF0F39300ADD96B /* MyBalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B85891BF0F39300ADD96B /* MyBalanceViewController.swift */; };
+		D90B858C1BF0F5A200ADD96B /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B858B1BF0F5A200ADD96B /* BannerView.swift */; };
 		D93F3C0D1BE53F6700CCAFFC /* IncomeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F3C0C1BE53F6700CCAFFC /* IncomeInfo.swift */; };
 		D93F3C111BE5DBAF00CCAFFC /* IncomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F3C101BE5DBAF00CCAFFC /* IncomeCell.swift */; };
 		D93F3C131BE71F1F00CCAFFC /* YZPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F3C121BE71F1F00CCAFFC /* YZPopupView.swift */; };
@@ -49,6 +51,8 @@
 		4B836AEC5B701C7BE5400B54 /* Pods-MZLaundry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MZLaundry.release.xcconfig"; path = "Pods/Target Support Files/Pods-MZLaundry/Pods-MZLaundry.release.xcconfig"; sourceTree = "<group>"; };
 		AD16E507BFFE67240483D800 /* Pods-MZLaundry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MZLaundry.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MZLaundry/Pods-MZLaundry.debug.xcconfig"; sourceTree = "<group>"; };
 		D90B85711BEF085200ADD96B /* CartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		D90B85891BF0F39300ADD96B /* MyBalanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyBalanceViewController.swift; sourceTree = "<group>"; };
+		D90B858B1BF0F5A200ADD96B /* BannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 		D93F3C0C1BE53F6700CCAFFC /* IncomeInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomeInfo.swift; sourceTree = "<group>"; };
 		D93F3C101BE5DBAF00CCAFFC /* IncomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomeCell.swift; sourceTree = "<group>"; };
 		D93F3C121BE71F1F00CCAFFC /* YZPopupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YZPopupView.swift; sourceTree = "<group>"; };
@@ -163,6 +167,7 @@
 				D965C7691BE3D17000FEA98F /* MZIncomeController.swift */,
 				D9E3ABC31BE889CF0020365F /* LaundryItemController.swift */,
 				D9A78F631BEB7D5D001835DC /* LaundryBasketViewController.swift */,
+				D90B85891BF0F39300ADD96B /* MyBalanceViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -189,6 +194,7 @@
 				D96182191BEA3B5600C5F709 /* LaundryCell.swift */,
 				D965C74C1BE3484600FEA98F /* CustomContentView.swift */,
 				D90B85711BEF085200ADD96B /* CartTableViewCell.swift */,
+				D90B858B1BF0F5A200ADD96B /* BannerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -363,6 +369,7 @@
 				D965C7601BE35E7C00FEA98F /* HttpTool.swift in Sources */,
 				D965C76C1BE524ED00FEA98F /* DailyIncomeInfo.swift in Sources */,
 				D961821A1BEA3B5600C5F709 /* LaundryCell.swift in Sources */,
+				D90B858A1BF0F39300ADD96B /* MyBalanceViewController.swift in Sources */,
 				D965C7491BE347F100FEA98F /* UserViewController.swift in Sources */,
 				D90B85721BEF085200ADD96B /* CartTableViewCell.swift in Sources */,
 				D965C7461BE347F100FEA98F /* LoginViewController.swift in Sources */,
@@ -371,6 +378,7 @@
 				D9E3ABC61BE8A5C00020365F /* CustomSegement.swift in Sources */,
 				D93F3C111BE5DBAF00CCAFFC /* IncomeCell.swift in Sources */,
 				D965C75F1BE35E7C00FEA98F /* CustomColors.swift in Sources */,
+				D90B858C1BF0F5A200ADD96B /* BannerView.swift in Sources */,
 				D965C75E1BE35E7C00FEA98F /* Constants.swift in Sources */,
 				D965C7471BE347F100FEA98F /* MainTabController.swift in Sources */,
 				D97ADF971BEC98C900B524FF /* ItemInCart.swift in Sources */,

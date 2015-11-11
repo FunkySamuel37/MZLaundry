@@ -53,4 +53,9 @@ class UserViewController: UIViewController {
       
     }
   }
+  @IBAction func goMyBalanceVC(sender: AnyObject) {
+    let vc = MyBalanceViewController()
+    
+    self.presentViewController(vc, animated: true, completion: nil)
+  }
 }

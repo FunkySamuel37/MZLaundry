@@ -88,6 +88,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-MZLaundry/CXCardView.framework"
   install_framework "Pods-MZLaundry/RJImageLoader.framework"
   install_framework "Pods-MZLaundry/SDWebImage.framework"
+  install_framework "Pods-MZLaundry/SnapKit.framework"
   install_framework "Pods-MZLaundry/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -95,5 +96,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-MZLaundry/CXCardView.framework"
   install_framework "Pods-MZLaundry/RJImageLoader.framework"
   install_framework "Pods-MZLaundry/SDWebImage.framework"
+  install_framework "Pods-MZLaundry/SnapKit.framework"
   install_framework "Pods-MZLaundry/SwiftyJSON.framework"
 fi

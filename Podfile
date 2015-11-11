@@ -10,6 +10,7 @@ pod 'RJImageLoader'
 pod 'SDWebImage'
 pod 'SwiftyJSON'
 pod 'CXCardView'
+pod 'SnapKit'
 
 end
 

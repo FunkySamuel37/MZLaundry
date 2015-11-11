@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '3DA32FED62701054082EB590'
+               BlueprintIdentifier = '8600C1BE72ADBC7C1D32C151'
                BlueprintName = 'CXCardView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'CXCardView.framework'>
