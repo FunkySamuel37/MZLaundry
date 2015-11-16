@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import pop
 
 protocol AddToCartDelegate{
   func addToCart(item:PopViewType,count:Int)

@@ -11,6 +11,7 @@ pod 'SDWebImage'
 pod 'SwiftyJSON'
 pod 'CXCardView'
 pod 'SnapKit'
+pod 'pop'
 
 end
 

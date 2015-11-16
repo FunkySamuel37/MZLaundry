@@ -90,6 +90,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-MZLaundry/SDWebImage.framework"
   install_framework "Pods-MZLaundry/SnapKit.framework"
   install_framework "Pods-MZLaundry/SwiftyJSON.framework"
+  install_framework "Pods-MZLaundry/pop.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-MZLaundry/Alamofire.framework"
@@ -98,4 +99,5 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-MZLaundry/SDWebImage.framework"
   install_framework "Pods-MZLaundry/SnapKit.framework"
   install_framework "Pods-MZLaundry/SwiftyJSON.framework"
+  install_framework "Pods-MZLaundry/pop.framework"
 fi

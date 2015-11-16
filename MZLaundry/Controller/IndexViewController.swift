@@ -92,9 +92,10 @@ class IndexViewController: UIViewController, UIScrollViewDelegate {
   }
   
   func loadAdData(){
-    HttpTool.sharedInstance.getAdInfo { (urls) -> Void in
+      HttpTool.sharedInstance.getAdInfo { (urls) -> Void in
       self.createImageView(urls)
     }
+    
   }
   
   func scrollViewDidScroll(scrollView: UIScrollView) {
@@ -117,6 +118,7 @@ extension IndexViewController{
   @IBAction func itemLaundry(sender: UIButton) {
     
     let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("LaundryItemController")
+//    vc.modalTransitionStyle = .PartialCurl;
     
     self.presentViewController(vc, animated: true) { () -> Void in
       
