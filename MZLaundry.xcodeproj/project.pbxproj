@@ -11,6 +11,9 @@
 		D90B85721BEF085200ADD96B /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B85711BEF085200ADD96B /* CartTableViewCell.swift */; };
 		D90B858A1BF0F39300ADD96B /* MyBalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B85891BF0F39300ADD96B /* MyBalanceViewController.swift */; };
 		D90B858C1BF0F5A200ADD96B /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B858B1BF0F5A200ADD96B /* BannerView.swift */; };
+		D93AF6851BFA2EB2004EF593 /* PresentingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93AF6841BFA2EB2004EF593 /* PresentingAnimator.swift */; };
+		D93AF6871BFA4423004EF593 /* BaseModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93AF6861BFA4423004EF593 /* BaseModelView.swift */; };
+		D93AF6891BFAE8E1004EF593 /* DismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93AF6881BFAE8E1004EF593 /* DismissAnimator.swift */; };
 		D93F3C0D1BE53F6700CCAFFC /* IncomeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F3C0C1BE53F6700CCAFFC /* IncomeInfo.swift */; };
 		D93F3C111BE5DBAF00CCAFFC /* IncomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F3C101BE5DBAF00CCAFFC /* IncomeCell.swift */; };
 		D93F3C131BE71F1F00CCAFFC /* YZPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F3C121BE71F1F00CCAFFC /* YZPopupView.swift */; };
@@ -53,6 +56,9 @@
 		D90B85711BEF085200ADD96B /* CartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
 		D90B85891BF0F39300ADD96B /* MyBalanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyBalanceViewController.swift; sourceTree = "<group>"; };
 		D90B858B1BF0F5A200ADD96B /* BannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
+		D93AF6841BFA2EB2004EF593 /* PresentingAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentingAnimator.swift; sourceTree = "<group>"; };
+		D93AF6861BFA4423004EF593 /* BaseModelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModelView.swift; sourceTree = "<group>"; };
+		D93AF6881BFAE8E1004EF593 /* DismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissAnimator.swift; sourceTree = "<group>"; };
 		D93F3C0C1BE53F6700CCAFFC /* IncomeInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomeInfo.swift; sourceTree = "<group>"; };
 		D93F3C101BE5DBAF00CCAFFC /* IncomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomeCell.swift; sourceTree = "<group>"; };
 		D93F3C121BE71F1F00CCAFFC /* YZPopupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YZPopupView.swift; sourceTree = "<group>"; };
@@ -120,6 +126,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D90699581BFA2DC40006FEAF /* Animator */ = {
+			isa = PBXGroup;
+			children = (
+				D93AF6841BFA2EB2004EF593 /* PresentingAnimator.swift */,
+				D93AF6881BFAE8E1004EF593 /* DismissAnimator.swift */,
+			);
+			path = Animator;
+			sourceTree = "<group>";
+		};
 		D95A69F61BC6A18F008FA6BC = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +161,7 @@
 				D95A6A0C1BC6A18F008FA6BC /* Assets.xcassets */,
 				D965C73F1BE347F100FEA98F /* Controller */,
 				D965C74B1BE3481900FEA98F /* View */,
+				D90699581BFA2DC40006FEAF /* Animator */,
 				D965C74A1BE3481400FEA98F /* Model */,
 				D965C75A1BE35E7C00FEA98F /* Utilities */,
 				D96EF7981BCCCCFD00B3C8B7 /* Support File */,
@@ -168,6 +184,7 @@
 				D9E3ABC31BE889CF0020365F /* LaundryItemController.swift */,
 				D9A78F631BEB7D5D001835DC /* LaundryBasketViewController.swift */,
 				D90B85891BF0F39300ADD96B /* MyBalanceViewController.swift */,
+				D93AF6861BFA4423004EF593 /* BaseModelView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -365,6 +382,8 @@
 				D9E3ABC41BE889CF0020365F /* LaundryItemController.swift in Sources */,
 				D93F3C0D1BE53F6700CCAFFC /* IncomeInfo.swift in Sources */,
 				D95A6A031BC6A18F008FA6BC /* AppDelegate.swift in Sources */,
+				D93AF6891BFAE8E1004EF593 /* DismissAnimator.swift in Sources */,
+				D93AF6871BFA4423004EF593 /* BaseModelView.swift in Sources */,
 				D97ADF951BEC90F400B524FF /* CartSingleton.swift in Sources */,
 				D965C7601BE35E7C00FEA98F /* HttpTool.swift in Sources */,
 				D965C76C1BE524ED00FEA98F /* DailyIncomeInfo.swift in Sources */,
@@ -373,6 +392,7 @@
 				D965C7491BE347F100FEA98F /* UserViewController.swift in Sources */,
 				D90B85721BEF085200ADD96B /* CartTableViewCell.swift in Sources */,
 				D965C7461BE347F100FEA98F /* LoginViewController.swift in Sources */,
+				D93AF6851BFA2EB2004EF593 /* PresentingAnimator.swift in Sources */,
 				D9A78F641BEB7D5D001835DC /* LaundryBasketViewController.swift in Sources */,
 				D965C76A1BE3D17000FEA98F /* MZIncomeController.swift in Sources */,
 				D9E3ABC61BE8A5C00020365F /* CustomSegement.swift in Sources */,

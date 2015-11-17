@@ -126,15 +126,23 @@ class YZPopupView: UIView {
     stepper = MyStepper(frame: CGRect(x: (contentView.frame.width - 180) / 2, y: contentView.frame.height - addCartButton.frame.height - 45 - 23, width: 180, height: 45))
     
     contentView.addSubview(stepper)
+    
   }
   
   func dismiss(){
     UIView.animateWithDuration(0.3, animations: { () -> Void in
+      
+      
       self.contentView.frame.origin.y += 310
       self.barrierView.alpha -= 0.5
       }) { (finished) -> Void in
         self.removeFromSuperview()
     }
+//    let contentViewtranY = springTransYAnimationFor(contentView, transY: 310)
+//    let alphaAnime       = basicAlphaAnimationFor(nil, alpha: 0)
+//    alphaAnime.delegate = self
+//    contentView.pop_addAnimation(contentViewtranY, forKey: "contentViewtranY")
+//    barrierView.pop_addAnimation(alphaAnime, forKey: "alphaAnimaDissmiss")
     
   }
   
@@ -154,9 +162,56 @@ class YZPopupView: UIView {
   }
   
   func present(){
-    UIView.animateWithDuration(0.3) { () -> Void in
-      self.contentView.frame.origin.y -= 310
-      self.barrierView.alpha += 0.5
+    
+    let contentTransYAnimate = springTransYAnimationFor(contentView, transY: -310)
+//    let scaleAnime = springScaleAnimationFor(contentView, fromScaleXY: CGSize(width: 3, height: 3))
+    
+    let alphaAnime = basicAlphaAnimationFor(nil, alpha: 0.5)
+//    contentView.autoresizesSubviews = true
+
+    
+    contentView.pop_addAnimation(contentTransYAnimate, forKey: "transYAnime")
+//    contentView.pop_addAnimation(scaleAnime, forKey: "scaleXY")
+    barrierView.pop_addAnimation(alphaAnime, forKey: "alphaAnima")
+  }
+  
+  
+  
+  //MARK: - 动画方法
+  func springTransYAnimationFor(view:UIView, transY:CGFloat) -> POPSpringAnimation {
+    var frameBefore = view.frame
+    let transYAnime = POPSpringAnimation(propertyNamed: kPOPViewFrame)
+    transYAnime.toValue = NSValue(CGRect: CGRect(x: frameBefore.origin.x,
+                                                 y: frameBefore.origin.y + transY,
+                                             width: frameBefore.width,
+                                            height: frameBefore.height))
+    transYAnime.springSpeed = 15
+    transYAnime.completionBlock = { (animation, finish) in
+      print("PopupViewTransFinished")
+      
     }
+    return transYAnime
+  }
+  
+  func springScaleAnimationFor(view:UIView, fromScaleXY:CGSize) -> POPSpringAnimation {
+    
+    let scaleAnime = POPSpringAnimation()
+    scaleAnime.property = POPAnimatableProperty.propertyWithName(kPOPViewScaleXY) as! POPAnimatableProperty
+//    scaleAnime.velocity = NSValue(CGSize: CGSize(width: 3.0, height: 3.0))
+    scaleAnime.fromValue = NSValue(CGSize: CGSize(width: 0.1, height: 0.1))
+    scaleAnime.toValue  = NSValue(CGSize: CGSize(width: 1.0, height: 1.0))
+    
+    return scaleAnime
+  }
+  
+  func basicAlphaAnimationFor(view:UIView?, alpha: CGFloat) -> POPBasicAnimation {
+    let alphaAnime = POPBasicAnimation(propertyNamed: kPOPViewAlpha)
+    alphaAnime.toValue = alpha
+    alphaAnime.duration = 0.3
+    alphaAnime.delegate = self
+    
+    return alphaAnime
   }
 }
+
+

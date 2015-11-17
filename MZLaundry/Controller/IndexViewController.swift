@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-class IndexViewController: UIViewController, UIScrollViewDelegate {
+class IndexViewController: BaseModelView, UIScrollViewDelegate {
   
   @IBOutlet weak var adScrollView: UIScrollView!
   @IBOutlet weak var adPageControl: UIPageControl!
@@ -118,7 +118,8 @@ extension IndexViewController{
   @IBAction func itemLaundry(sender: UIButton) {
     
     let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("LaundryItemController")
-//    vc.modalTransitionStyle = .PartialCurl;
+    vc.transitioningDelegate = self
+    vc.modalPresentationStyle = UIModalPresentationStyle.Custom
     
     self.presentViewController(vc, animated: true) { () -> Void in
       
