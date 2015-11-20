@@ -12,8 +12,9 @@
 		D90B858A1BF0F39300ADD96B /* MyBalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B85891BF0F39300ADD96B /* MyBalanceViewController.swift */; };
 		D90B858C1BF0F5A200ADD96B /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B858B1BF0F5A200ADD96B /* BannerView.swift */; };
 		D93AF6851BFA2EB2004EF593 /* PresentingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93AF6841BFA2EB2004EF593 /* PresentingAnimator.swift */; };
-		D93AF6871BFA4423004EF593 /* BaseModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93AF6861BFA4423004EF593 /* BaseModelView.swift */; };
+		D93AF6871BFA4423004EF593 /* AnimatableFromViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93AF6861BFA4423004EF593 /* AnimatableFromViewController.swift */; };
 		D93AF6891BFAE8E1004EF593 /* DismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93AF6881BFAE8E1004EF593 /* DismissAnimator.swift */; };
+		D93AF6A51BFC56B5004EF593 /* UtilityAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93AF6A41BFC56B5004EF593 /* UtilityAnimator.swift */; };
 		D93F3C0D1BE53F6700CCAFFC /* IncomeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F3C0C1BE53F6700CCAFFC /* IncomeInfo.swift */; };
 		D93F3C111BE5DBAF00CCAFFC /* IncomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F3C101BE5DBAF00CCAFFC /* IncomeCell.swift */; };
 		D93F3C131BE71F1F00CCAFFC /* YZPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F3C121BE71F1F00CCAFFC /* YZPopupView.swift */; };
@@ -57,8 +58,9 @@
 		D90B85891BF0F39300ADD96B /* MyBalanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyBalanceViewController.swift; sourceTree = "<group>"; };
 		D90B858B1BF0F5A200ADD96B /* BannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 		D93AF6841BFA2EB2004EF593 /* PresentingAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentingAnimator.swift; sourceTree = "<group>"; };
-		D93AF6861BFA4423004EF593 /* BaseModelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModelView.swift; sourceTree = "<group>"; };
+		D93AF6861BFA4423004EF593 /* AnimatableFromViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatableFromViewController.swift; sourceTree = "<group>"; };
 		D93AF6881BFAE8E1004EF593 /* DismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissAnimator.swift; sourceTree = "<group>"; };
+		D93AF6A41BFC56B5004EF593 /* UtilityAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityAnimator.swift; sourceTree = "<group>"; };
 		D93F3C0C1BE53F6700CCAFFC /* IncomeInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomeInfo.swift; sourceTree = "<group>"; };
 		D93F3C101BE5DBAF00CCAFFC /* IncomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomeCell.swift; sourceTree = "<group>"; };
 		D93F3C121BE71F1F00CCAFFC /* YZPopupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YZPopupView.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 			children = (
 				D93AF6841BFA2EB2004EF593 /* PresentingAnimator.swift */,
 				D93AF6881BFAE8E1004EF593 /* DismissAnimator.swift */,
+				D93AF6A41BFC56B5004EF593 /* UtilityAnimator.swift */,
 			);
 			path = Animator;
 			sourceTree = "<group>";
@@ -184,7 +187,7 @@
 				D9E3ABC31BE889CF0020365F /* LaundryItemController.swift */,
 				D9A78F631BEB7D5D001835DC /* LaundryBasketViewController.swift */,
 				D90B85891BF0F39300ADD96B /* MyBalanceViewController.swift */,
-				D93AF6861BFA4423004EF593 /* BaseModelView.swift */,
+				D93AF6861BFA4423004EF593 /* AnimatableFromViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -383,7 +386,7 @@
 				D93F3C0D1BE53F6700CCAFFC /* IncomeInfo.swift in Sources */,
 				D95A6A031BC6A18F008FA6BC /* AppDelegate.swift in Sources */,
 				D93AF6891BFAE8E1004EF593 /* DismissAnimator.swift in Sources */,
-				D93AF6871BFA4423004EF593 /* BaseModelView.swift in Sources */,
+				D93AF6871BFA4423004EF593 /* AnimatableFromViewController.swift in Sources */,
 				D97ADF951BEC90F400B524FF /* CartSingleton.swift in Sources */,
 				D965C7601BE35E7C00FEA98F /* HttpTool.swift in Sources */,
 				D965C76C1BE524ED00FEA98F /* DailyIncomeInfo.swift in Sources */,
@@ -406,6 +409,7 @@
 				D965C7481BE347F100FEA98F /* MZSplashViewController.swift in Sources */,
 				D965C74D1BE3484600FEA98F /* CustomContentView.swift in Sources */,
 				D965C76E1BE5250200FEA98F /* OrderInfo.swift in Sources */,
+				D93AF6A51BFC56B5004EF593 /* UtilityAnimator.swift in Sources */,
 				D9D381831BE774CF00E1BDC8 /* PopViewType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

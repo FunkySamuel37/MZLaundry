@@ -49,6 +49,7 @@ class UserViewController: UIViewController {
 
   @IBAction func goMyIncomeVC(sender: AnyObject) {
     let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("MZIncomeController")
+//    self.navigationController?.pushViewController(vc, animated: true)
     self.presentViewController(vc, animated: true) { () -> Void in
       
     }

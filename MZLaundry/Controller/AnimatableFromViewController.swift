@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BaseModelView: UIViewController {
+class AnimatableFromViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -34,7 +34,7 @@ class BaseModelView: UIViewController {
   
 }
 
-extension BaseModelView: UIViewControllerTransitioningDelegate {
+extension AnimatableFromViewController: UIViewControllerTransitioningDelegate {
   func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
     return PresentingAnimator()
   }

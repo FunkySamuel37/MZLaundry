@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-class IndexViewController: BaseModelView, UIScrollViewDelegate {
+class IndexViewController: AnimatableFromViewController, UIScrollViewDelegate {
   
   @IBOutlet weak var adScrollView: UIScrollView!
   @IBOutlet weak var adPageControl: UIPageControl!

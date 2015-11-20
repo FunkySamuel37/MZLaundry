@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LaundryItemController: BaseModelView {
+class LaundryItemController: UIViewController {
   var clothesSegment: CustomSegement!
   let screenSize = UIScreen.mainScreen().bounds
   let reuseIdentifier = "laundryItem"

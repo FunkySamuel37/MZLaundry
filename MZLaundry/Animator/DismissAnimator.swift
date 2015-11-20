@@ -19,47 +19,19 @@ class DismissAnimator: NSObject, UIViewControllerAnimatedTransitioning {
   func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
     let fromView = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)?.view
     let toView = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)?.view
-    toView?.userInteractionEnabled = true
     
-    transitionContext.completeTransition(true)
-    fromView?.removeFromSuperview()
+    let fromViewTransXA = UtilityAnimator.basicPositionXAnimate(view: fromView!, transX: screenSize.width * 1.5, duration: self.transitionDuration(transitionContext))
+    fromViewTransXA.completionBlock = {(animation, finish) in
+      if finish {
+        toView?.userInteractionEnabled = true
+        fromView?.removeFromSuperview()
+        transitionContext.completeTransition(true)
+      }
+    }
+    fromView?.pop_addAnimation(fromViewTransXA, forKey: "fromViewTransXA")
+    
+    let toViewTransXA = UtilityAnimator.basicPositionXAnimate(view: toView!, transX: screenSize.width / 2.0, duration: self.transitionDuration(transitionContext))
+    toView?.pop_addAnimation(toViewTransXA, forKey: "toViewTransXA")
   }
   
-//  func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
-//    let fromController =
-//    transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)!
-//    let toController =
-//    transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)!
-//    let contantView =
-//    transitionContext.containerView()!
-//    let shadowView = UIView(frame: UIScreen.mainScreen().bounds)
-//    
-//    shadowView.addSubview(fromController.view)
-//    contantView.addSubview(toController.view)
-//    contantView.addSubview(shadowView)
-//    
-//    toController.view.transform = CGAffineTransformMakeTranslation(-screenSize.width/2, 0)
-//    shadowView.layer.shadowOffset = CGSizeZero
-//    shadowView.layer.shadowRadius = 5.0
-//    shadowView.layer.shadowColor = UIColor.blackColor().CGColor
-//    
-//    let animation = CABasicAnimation(keyPath: "shadowOpacity")
-//    
-//    animation.fromValue = 0.7
-//    animation.toValue = 0.1
-//    animation.duration = transitionDuration(transitionContext)
-//    animation.repeatCount = 1.0
-//    
-//    shadowView.layer.addAnimation(animation, forKey: nil)
-//    
-//    UIView.animateWithDuration(transitionDuration(transitionContext), animations: { () -> Void in
-//      toController.view.transform = CGAffineTransformMakeTranslation(0, 0)
-//      shadowView.transform = CGAffineTransformMakeTranslation(self.screenSize.width, 0)
-//      }) { (_) -> Void in
-//        transitionContext.completeTransition(true)
-//        fromController.view.removeFromSuperview()
-//
-//    }
-//  
-//  }
 }

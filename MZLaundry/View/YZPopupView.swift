@@ -43,14 +43,15 @@ class YZPopupView: UIView {
   override init(frame: CGRect) {
     super.init(frame: frame)
     
-    
+    setupViews()
+
     
   }
   
   convenience init(frame: CGRect,clothesType: PopViewType){
     self.init(frame: frame)
     self.type = clothesType
-    setupViews()
+    setupData()
   }
   
   required init?(coder aDecoder: NSCoder) {
@@ -75,40 +76,33 @@ class YZPopupView: UIView {
     
     //clothBackImageView
     clothBackImageView             = UIImageView(frame: CGRect(x: 15, y: 20, width: 110, height: 125))
-    clothBackImageView.image       = UIImage(named: type.backGroundImage)
     contentView.addSubview(clothBackImageView)
     
     //clothImageView
     let clothBackFrame             = clothBackImageView.bounds
     clothImageView                 = UIImageView(frame: CGRect(x: (clothBackFrame.width - 70) / 2, y: (clothBackFrame.height - 90) / 2, width: 70, height: 90))
-    clothImageView.image           = UIImage(named: type.image)
     clothBackImageView.addSubview(clothImageView)
     
     //nameLabel
     nameLabel                      = UILabel(frame: CGRect(x: 125 + 10 , y: 20, width: 70, height: 25))
     nameLabel.textAlignment        = NSTextAlignment.Left
-    nameLabel.text                 = type.name
     nameLabel.font                 = UIFont(name: "STHeitiTC-Light", size: 20)
     contentView.addSubview(nameLabel)
     
     //priceLabel
     priceLabel                     = UILabel(frame: CGRect(x: 125 + 10 , y: 55, width: 50, height: 25))
-    priceLabel.text                = "¥" + type.price
     priceLabel.font                = UIFont(name: "MicrosoftYaHei", size: 22)
     priceLabel.textColor           = UIColor.getCustOrangeColor()
-    priceLabel.sizeToFit()
     contentView.addSubview(priceLabel)
     
     //moduleLabel
     moduleLabel                    = UILabel(frame: CGRect(x: 125 + 10 + priceLabel.frame.width, y: 64, width: 50, height: 25))
-    moduleLabel.text               = type.module
     moduleLabel.font               = UIFont(name: "STHeitiTC-Light", size: 15)
     moduleLabel.sizeToFit()
     contentView.addSubview(moduleLabel)
     
     //descLabel
     descLabel                      = UILabel(frame: CGRect(x: 125 + 10 , y: 98, width: contentView.frame.width - 135 - 25, height: 50))
-    descLabel.text                 = type.desc
     descLabel.numberOfLines        = 0
     descLabel.font                 = UIFont(name: "STHeitiTC-Light", size: 10)
     descLabel.textColor            = UIColor.getDarkGrayFontColor()
@@ -127,6 +121,19 @@ class YZPopupView: UIView {
     
     contentView.addSubview(stepper)
     
+    
+  }
+  
+  func setupData(){
+    clothBackImageView.image       = UIImage(named: type.backGroundImage)
+    clothImageView.image           = UIImage(named: type.image)
+    nameLabel.text                 = type.name
+    priceLabel.text                = "¥" + type.price
+    priceLabel.sizeToFit()
+
+    moduleLabel.text               = type.module
+    descLabel.text                 = type.desc
+
   }
   
   func dismiss(){
@@ -164,14 +171,14 @@ class YZPopupView: UIView {
   func present(){
     
     let contentTransYAnimate = springTransYAnimationFor(contentView, transY: -310)
-//    let scaleAnime = springScaleAnimationFor(contentView, fromScaleXY: CGSize(width: 3, height: 3))
+    let scaleAnime = springScaleAnimationFor(contentView, fromScaleXY: CGSize(width: 0.1, height: 0.1))
     
     let alphaAnime = basicAlphaAnimationFor(nil, alpha: 0.5)
 //    contentView.autoresizesSubviews = true
 
     
     contentView.pop_addAnimation(contentTransYAnimate, forKey: "transYAnime")
-//    contentView.pop_addAnimation(scaleAnime, forKey: "scaleXY")
+    contentView.pop_addAnimation(scaleAnime, forKey: "scaleXY")
     barrierView.pop_addAnimation(alphaAnime, forKey: "alphaAnima")
   }
   
@@ -179,26 +186,29 @@ class YZPopupView: UIView {
   
   //MARK: - 动画方法
   func springTransYAnimationFor(view:UIView, transY:CGFloat) -> POPSpringAnimation {
-    var frameBefore = view.frame
-    let transYAnime = POPSpringAnimation(propertyNamed: kPOPViewFrame)
-    transYAnime.toValue = NSValue(CGRect: CGRect(x: frameBefore.origin.x,
-                                                 y: frameBefore.origin.y + transY,
-                                             width: frameBefore.width,
-                                            height: frameBefore.height))
-    transYAnime.springSpeed = 15
+    var layer = view.layer
+    let transYAnime = POPSpringAnimation()
+    transYAnime.property = POPAnimatableProperty.propertyWithName(kPOPLayerPositionY) as! POPAnimatableProperty
+    transYAnime.toValue =  layer.position.y + transY
+    print(screenSize.height + transY)
+    print(transY)
+    print(screenSize.height)
     transYAnime.completionBlock = { (animation, finish) in
       print("PopupViewTransFinished")
+      print(self.contentView.frame.origin.y)
       
     }
     return transYAnime
+    
   }
   
   func springScaleAnimationFor(view:UIView, fromScaleXY:CGSize) -> POPSpringAnimation {
     
     let scaleAnime = POPSpringAnimation()
     scaleAnime.property = POPAnimatableProperty.propertyWithName(kPOPViewScaleXY) as! POPAnimatableProperty
-//    scaleAnime.velocity = NSValue(CGSize: CGSize(width: 3.0, height: 3.0))
-    scaleAnime.fromValue = NSValue(CGSize: CGSize(width: 0.1, height: 0.1))
+    scaleAnime.springBounciness = 12
+    scaleAnime.springSpeed = 20
+    scaleAnime.fromValue = NSValue(CGSize: fromScaleXY)
     scaleAnime.toValue  = NSValue(CGSize: CGSize(width: 1.0, height: 1.0))
     
     return scaleAnime
@@ -206,6 +216,7 @@ class YZPopupView: UIView {
   
   func basicAlphaAnimationFor(view:UIView?, alpha: CGFloat) -> POPBasicAnimation {
     let alphaAnime = POPBasicAnimation(propertyNamed: kPOPViewAlpha)
+    
     alphaAnime.toValue = alpha
     alphaAnime.duration = 0.3
     alphaAnime.delegate = self
