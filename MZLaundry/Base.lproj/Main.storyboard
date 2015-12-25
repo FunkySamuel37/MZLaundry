@@ -26,6 +26,7 @@
             <string>STHeitiTC-Light</string>
             <string>STHeitiTC-Light</string>
             <string>STHeitiTC-Light</string>
+            <string>STHeitiTC-Light</string>
         </mutableArray>
         <mutableArray key="msyh.ttf">
             <string>MicrosoftYaHei</string>
@@ -1231,6 +1232,15 @@
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e3Q-82-34H">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="洗衣篮" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6To-4W-SEM">
+                                        <rect key="frame" x="133" y="19" width="54" height="26"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="18"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>

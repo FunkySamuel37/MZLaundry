@@ -13,7 +13,6 @@ class MainTabController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
       let titles = ["首页","洗衣篮","我","更多"]
-//        self.tabBarItem.
       for i in 0..<self.viewControllers!.count{
         let vc = viewControllers![i]
         let image = UIImage(named: "2-1-tb\(i+1)-1")
